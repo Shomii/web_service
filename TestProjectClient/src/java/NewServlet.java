@@ -58,7 +58,7 @@ public class NewServlet extends HttpServlet {
 					Logger.getLogger(NewServlet.class.getName()).log(Level.SEVERE, null, ex);
 				}
 
-				jsonConnResult = DriverManager.getConnection("jdbc:mysql://localhost/a_json", "root", "shomilendi");
+				jsonConnResult = DriverManager.getConnection("jdbc:mysql://localhost/a_json", "root", "xxxxxxxx");
 
 				stmt = jsonConnResult.createStatement();
 
@@ -107,7 +107,7 @@ public class NewServlet extends HttpServlet {
 				out.println("<br/>");
 				out.println("<center><h1>XML Table</h1>");
 
-				xmlConnResult = DriverManager.getConnection("jdbc:mysql://localhost/a_xml", "root", "shomilendi");
+				xmlConnResult = DriverManager.getConnection("jdbc:mysql://localhost/a_xml", "root", "xxxxxxx");
 
 				stmt2 = xmlConnResult.createStatement();
 
